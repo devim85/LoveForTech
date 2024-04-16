@@ -2,45 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Protocol Information</title>
+    <title>Web Protocol Information</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        h1 { color: navy; }
-        h2 { color: darkgreen; }
-        .protocol { background-color: #f0f0f0; padding: 10px; margin-bottom: 15px; }
-        .tcp { border-left: 5px solid red; }
-        .udp { border-left: 5px solid blue; }
-        .websockets { border-left: 5px solid purple; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        .header { background-color: #007bff; padding: 10px 0; text-align: center; color: white; }
+        .protocol-logo { width: 50px; height: auto; }
+        .protocol { background-color: #ffffff; padding: 20px; margin-bottom: 15px; border-left: 5px solid #007bff; }
+        .protocol h2 { color: #007bff; }
+        .tcp { border-color: red; }
+        .udp { border-color: blue; }
+        .websockets { border-color: purple; }
+        /* Add additional styling as needed */
     </style>
 </head>
 <body>
-    <h1>Web Protocols Overview</h1>
-    
-    <div class="protocol tcp">
-        <h2>TCP - Transmission Control Protocol</h2>
-        <p>TCP is known for its reliability in data transmission. It ensures that all data packets are delivered in the correct order and without errors. This is particularly important for video streaming where the quality of the content is a priority.</p>
-        <p><strong>Pros of TCP for Video Streaming:</strong></p>
-        <ul>
-            <li><strong>Reliability:</strong> Guarantees that video packets arrive intact and in the correct sequence.</li>
-            <!-- Add more pros as needed -->
-        </ul>
+    <div class="header">
+        <h1>Web Protocols Overview</h1>
     </div>
     
-    <div class="protocol udp">
-        <h2>UDP - User Datagram Protocol</h2>
-        <p>UDP is a simpler, connectionless protocol used for situations where speed is more critical than reliability. For live video streaming or gaming, UDP is often preferred.</p>
-        <p><strong>Pros of UDP for Video Streaming:</strong></p>
-        <ul>
-            <li><strong>Speed:</strong> Faster data transmission since it does not wait for acknowledgments.</li>
-            <!-- Add more pros as needed -->
-        </ul>
+    <div class="protocol">
+        <img src="HTTP-logo.png" alt="HTTP Logo" class="protocol-logo">
+        <h2>HTTP - Hypertext Transfer Protocol</h2>
+        <p>HTTP is the foundation of data exchange on the Web and a client-server protocol used for fetching resources like HTML documents.</p>
     </div>
     
-    <div class="protocol websockets">
-        <h2>WebSockets</h2>
-        <p>WebSockets provide a full-duplex communication channel over a single, long-lived connection, which is ideal for real-time applications like video conferencing.</p>
+    <div class="protocol">
+        <img src="HTTPS-logo.png" alt="HTTPS Logo" class="protocol-logo">
+        <h2>HTTPS - HTTP Secure</h2>
+        <p>HTTPS is the secure version of HTTP, where communications are encrypted for security.</p>
     </div>
     
+    <div class="protocol">
+        <img src="FTP-logo.png" alt="FTP Logo" class="protocol-logo">
+        <h2>FTP - File Transfer Protocol</h2>
+        <p>FTP is used for the transfer of computer files between a client and server on a computer network.</p>
+    </div>
+
     
     <div class="protocol tcp">
         <h2>TCP - Transmission Control Protocol</h2>
