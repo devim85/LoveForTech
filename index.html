@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protocol Information</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: navy; }
+        h2 { color: darkgreen; }
+        .protocol { background-color: #f0f0f0; padding: 10px; margin-bottom: 15px; }
+        .tcp { border-left: 5px solid red; }
+        .udp { border-left: 5px solid blue; }
+        .websockets { border-left: 5px solid purple; }
+    </style>
+</head>
+<body>
+    <h1>Web Protocols Overview</h1>
+    
+    <div class="protocol tcp">
+        <h2>TCP - Transmission Control Protocol</h2>
+        <p>TCP is known for its reliability in data transmission. It ensures that all data packets are delivered in the correct order and without errors. This is particularly important for video streaming where the quality of the content is a priority.</p>
+        <p><strong>Pros of TCP for Video Streaming:</strong></p>
+        <ul>
+            <li><strong>Reliability:</strong> Guarantees that video packets arrive intact and in the correct sequence.</li>
+            <!-- Add more pros as needed -->
+        </ul>
+    </div>
+    
+    <div class="protocol udp">
+        <h2>UDP - User Datagram Protocol</h2>
+        <p>UDP is a simpler, connectionless protocol used for situations where speed is more critical than reliability. For live video streaming or gaming, UDP is often preferred.</p>
+        <p><strong>Pros of UDP for Video Streaming:</strong></p>
+        <ul>
+            <li><strong>Speed:</strong> Faster data transmission since it does not wait for acknowledgments.</li>
+            <!-- Add more pros as needed -->
+        </ul>
+    </div>
+    
+    <div class="protocol websockets">
+        <h2>WebSockets</h2>
+        <p>WebSockets provide a full-duplex communication channel over a single, long-lived connection, which is ideal for real-time applications like video conferencing.</p>
+    </div>
+    
+    <!-- Add more protocols as needed -->
+    
+</body>
 </html>
